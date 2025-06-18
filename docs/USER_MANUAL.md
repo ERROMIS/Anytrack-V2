@@ -66,7 +66,7 @@ Once created, click on the video to place the tracker.
 
 ### Defining a detection region
 
-Right-click and drag on the video to draw a rectangle around the area where tracking should take place.  
+Control + Right-click (maybe..., it change on linux/mac and windows) and drag on the video to draw a green rectangle around the area where tracking should take place.  
 This restricts the region the tracker will analyze on each frame.
 
 ### Switching between trackers
@@ -123,3 +123,4 @@ You cannot start a new graph until the current one is cleared.
 ---
 
 If you encounter bugs or unexpected behavior, restart the application and reload your video.
+Try pausing the video before closing the app, it might crash...
