@@ -1,0 +1,147 @@
+<?xml version="1.0" encoding="UTF-8" standalone="no"?>
+<svg xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink"  version="1.2" baseProfile="tiny" viewBox ="0 0 774.000000 514.000000">
+<title>pyqtgraph SVG export</title>
+<desc>Generated with Qt and pyqtgraph</desc>
+<style>
+    image {
+        image-rendering: crisp-edges;
+        image-rendering: -moz-crisp-edges;
+        image-rendering: pixelated;
+    }
+</style>
+<rect width="100%" height="100%" style="fill:rgba(0, 0, 0, 1.000000)" />
+<defs>
+</defs>
+<g fill="none" stroke="black" stroke-width="1" fill-rule="evenodd" stroke-linecap="square" stroke-linejoin="bevel" id="PlotItem_1">
+    <g fill="none" stroke="black" stroke-width="1" fill-rule="evenodd" stroke-linecap="square" stroke-linejoin="bevel" id="ViewBox_1">
+        <g fill="none" stroke="none" font-family=".AppleSystemUIFont" font-size="13" font-weight="400" font-style="normal">
+            <path vector-effect="non-scaling-stroke" fill-rule="evenodd" d="M59.0906,31.0 L772.9996,31.0 L772.9996,473.8 L59.0906,473.8 L59.0906,31.0 "/>
+        </g>
+        <clipPath id="ViewBox_1_clip">
+            <path vector-effect="none" fill-rule="evenodd" d="M59.0906,31.0 L773.0,31.0 L773.0,473.8 L59.0906,473.8 L59.0906,31.0 " stroke-width="1.0"/>
+        </clipPath>
+        <g clip-path="url(#ViewBox_1_clip)">
+            <g fill="none" stroke="black" stroke-width="1" fill-rule="evenodd" stroke-linecap="square" stroke-linejoin="bevel" id="ChildGroup_1">
+                <g id="PlotDataItem_1">
+                    <g fill="none" stroke="black" stroke-width="1" fill-rule="evenodd" stroke-linecap="square" stroke-linejoin="bevel" id="PlotCurveItem_1">
+                        <g fill="none" stroke="#c8c8c8" stroke-opacity="1" stroke-width="1" stroke-linecap="square" stroke-linejoin="bevel" font-family=".AppleSystemUIFont" font-size="13" font-weight="400" font-style="normal">
+                            <path vector-effect="non-scaling-stroke" fill-rule="evenodd" d="M84.6056,426.3519864 L86.63897,72.34743760000003 L88.67233999999999,72.34743760000003 L90.70571,52.13855920000003 L92.73908,421.3832656 L94.77244999999999,424.54320720000004 L96.80582,425.36952 L98.83919,425.36952 L100.87256,428.5348836 L102.90593,429.09443400000004 L104.9393,430.6266912 L106.97267,431.15479400000004 L109.00604,432.136176 L111.03941,433.1164736 L113.07278,432.6469284 L115.10615,432.6469284 L117.13952,433.621804 L119.17289,433.621804 L121.20626,433.621804 L123.23962999999999,433.621804 L125.273,433.621804 L127.30637,433.1435836 L129.33974,433.1435836 L131.37311,433.1435836 L133.40648,433.1435836 L135.43984999999998,433.1435836 L137.47322,433.1435836 L139.50659000000002,433.1435836 L141.53996,433.1435836 L143.57333,433.1435836 L145.6067,433.1435836 L147.64007,434.11412160000003 L149.67344,434.11412160000003 L151.70681,434.11412160000003 L153.74018,434.11412160000003 L155.77355,434.11412160000003 L157.80692,434.11412160000003 L159.84028999999998,257.4686148 L161.87365999999997,418.5833448 L163.90703,417.6193132 L165.9404,51.03030239999998 L167.97377,424.1213756 L170.00714,425.36952 L172.04050999999998,425.36952 L174.07388,425.96160240000006 L176.10725,427.53832 L178.14061999999998,428.102208 L180.17399,429.6398872 L182.20736,431.6124108 L184.24072999999999,431.15479400000004 L186.27409999999998,432.136176 L188.30747,433.621804 L190.34084000000001,433.621804 L192.37421,433.621804 L194.40758,433.621804 L196.44095,433.621804 L198.47431999999998,433.621804 L200.50769,433.621804 L202.54106,433.621804 L204.57443,433.621804 L206.6078,433.621804 L208.64117,433.1435836 L210.67454,433.1435836 L212.70790999999997,433.1435836 L214.74128000000002,433.1435836 L216.77465,433.1435836 L218.80802,434.11412160000003 L220.84139,434.11412160000003 L222.87475999999998,434.11412160000003 L224.90813000000003,434.11412160000003 L226.94150000000002,434.11412160000003 L228.97487,434.11412160000003 L231.00824,424.415248 L233.04161,453.93912240000003 L235.07497999999998,51.92167919999997 L237.10834999999997,51.479243999999994 L239.14171999999996,423.25819320000005 L241.17509,424.95961680000005 L243.20846,425.36952 L245.24183,426.3736744 L247.27519999999998,427.9623204 L249.30856999999997,429.5292784 L251.34193999999997,430.0844912 L253.37531,431.6124108 L255.40868,432.136176 L257.44205,432.136176 L259.47542,433.1164736 L261.50879,433.1164736 L263.54216,433.1164736 L265.57553,432.6469284 L267.6089,432.6469284 L269.64227,433.621804 L271.67564,433.621804 L273.70901000000003,433.621804 L275.74238,433.621804 L277.77575,433.621804 L279.80912,433.621804 L281.84249,433.621804 L283.87586,433.621804 L285.90923,433.621804 L287.94259999999997,433.621804 L289.97597,434.11412160000003 L292.00934,434.11412160000003 L294.04271,434.11412160000003 L296.07608,434.11412160000003 L298.10945,434.11412160000003 L300.14282,434.11412160000003 L302.17618999999996,434.11412160000003 L304.20956,434.11412160000003 L306.24293,434.11412160000003 L308.2763,434.11412160000003 L310.30967,434.11412160000003 L312.34304,258.03033400000004 L314.37641,419.0778312 L316.40978,417.6193132 L318.44315,52.3164008 L320.47652,424.1213756 L322.50989,425.36952 L324.54326000000003,425.36952 L326.57663,426.3736744 L328.61,427.9623204 L330.64337,429.5292784 L332.67674,431.6124108 L334.71011,432.136176 L336.74348000000003,432.136176 L338.77685,433.1164736 L340.81021999999996,432.6469284 L342.84358999999995,432.6469284 L344.87696,432.6469284 L346.91033,432.6469284 L348.9437,433.621804 L350.97706999999997,433.621804 L353.01043999999996,433.1435836 L355.04381,433.1435836 L357.07718,433.1435836 L359.11055,433.1435836 L361.14392,433.1435836 L363.17728999999997,433.1435836 L365.21066,433.1435836 L367.24403,433.1435836 L369.2774,433.1435836 L371.31077,389.8597576 L373.34414,434.11412160000003 L375.37751,434.11412160000003 L377.41088,430.7188652 L379.44425,429.28745720000006 L381.47762,51.92167919999997 L383.51099,50.85896719999994 L385.54436,421.8267852 L387.57773,424.54320720000004 L389.61109999999996,424.3631968 L391.64446999999996,425.36952 L393.67783999999995,426.9625036 L395.71121,427.53832 L397.74458,429.09443400000004 L399.77795,429.6398872 L401.81131999999997,431.6124108 L403.84468999999996,432.136176 L405.87806,432.136176 L407.91143,433.1164736 L409.9448,432.6469284 L411.97817000000003,433.621804 L414.01153999999997,433.621804 L416.04491,433.621804 L418.07827999999995,433.621804 L420.11165,433.1435836 L422.14502,433.1435836 L424.17839,433.1435836 L426.21176,433.1435836 L428.24512999999996,433.1435836 L430.2785,433.1435836 L432.31187,389.8597576 L434.34524,117.76861600000001 L436.37861,433.1435836 L438.41197999999997,433.1435836 L440.44534999999996,433.1435836 L442.47872,433.1435836 L444.51209,433.1435836 L446.54546,433.1435836 L448.57883,433.1435836 L450.6122,433.1435836 L452.64557,434.11412160000003 L454.67893999999995,426.83996640000004 L456.71231,429.2451656 L458.74567999999994,73.98379719999997 L460.77905,51.70154600000001 L462.81242000000003,422.81684240000004 L464.84578999999997,424.54320720000004 L466.87916,425.36952 L468.91252999999995,425.36952 L470.9459,426.9625036 L472.97927000000004,428.5348836 L475.01264,429.09443400000004 L477.04601,431.0745484 L479.07937999999996,431.6124108 L481.11275,432.136176 L483.14612,433.1164736 L485.17949,433.1164736 L487.21286,432.6469284 L489.24622999999997,432.6469284 L491.27959999999996,432.6469284 L493.31297,433.621804 L495.34634,433.621804 L497.37971,433.621804 L499.41308,433.621804 L501.44644999999997,433.621804 L503.47982,433.1435836 L505.51318999999995,433.1435836 L507.54656,433.1435836 L509.57992999999993,433.1435836 L511.6133,433.1435836 L513.6466700000001,434.11412160000003 L515.68004,434.11412160000003 L517.7134100000001,434.11412160000003 L519.74678,434.11412160000003 L521.78015,434.11412160000003 L523.81352,434.11412160000003 L525.84689,434.11412160000003 L527.88026,434.11412160000003 L529.91363,433.1435836 L531.947,429.3210736 L533.98037,51.92167919999997 L536.01374,52.13855920000003 L538.04711,422.3700696 L540.08048,424.1213756 L542.1138500000001,425.36952 L544.1472200000001,425.36952 L546.18059,426.3736744 L548.21396,427.9623204 L550.24733,428.5348836 L552.2807,430.0844912 L554.31407,431.6124108 L556.34744,432.5959616 L558.38081,432.136176 L560.41418,433.1164736 L562.44755,433.1164736 L564.4809200000001,433.1164736 L566.51429,432.6469284 L568.5476600000001,432.6469284 L570.5810299999999,432.6469284 L572.6144,432.6469284 L574.64777,433.621804 L576.68114,433.621804 L578.71451,433.1435836 L580.74788,433.1435836 L582.78125,433.1435836 L584.81462,433.1435836 L586.84799,433.1435836 L588.8813600000001,433.1435836 L590.91473,433.1435836 L592.9481000000001,434.11412160000003 L594.9814700000001,434.11412160000003 L597.0148399999999,434.11412160000003 L599.04821,433.1435836 L601.0815799999999,260.1264792 L603.11495,418.109462 L605.14832,418.1170528 L607.18169,422.81684240000004 L609.21506,424.54320720000004 L611.24843,424.3631968 L613.2818,425.36952 L615.31517,426.3736744 L617.34854,428.9610528 L619.38191,428.5348836 L621.4152799999999,430.0844912 L623.44865,431.6124108 L625.48202,431.15479400000004 L627.51539,432.136176 L629.54876,433.1164736 L631.58213,432.6469284 L633.6155,432.6469284 L635.64887,433.621804 L637.68224,433.621804 L639.71561,433.621804 L641.74898,433.621804 L643.78235,433.621804 L645.81572,433.621804 L647.8490899999999,433.621804 L649.88246,433.1435836 L651.9158299999999,389.8597576 L653.9492,390.06796240000006 L655.98257,434.11412160000003 L658.01594,434.11412160000003 L660.04931,433.1435836 L662.08268,433.1435836 L664.11605,434.11412160000003 L666.14942,434.11412160000003 L668.18279,434.11412160000003 L670.2161600000001,434.11412160000003 L672.2495299999999,434.11412160000003 L674.2829,434.11412160000003 L676.31627,433.1435836 L678.34964,433.1435836 L680.38301,433.1435836 L682.41638,426.83996640000004 L684.44975,419.5647268 L686.48312,418.5833448 L688.51649,52.13855920000003 L690.54986,423.25819320000005 L692.58323,424.54320720000004 L694.6166,424.3631968 L696.64997,425.7729168 L698.6833399999999,427.3778288 L700.71671,427.53832 L702.7500799999999,429.5292784 L704.78345,430.0844912 L706.81682,430.6266912 L708.85019,431.15479400000004 L710.88356,432.136176 L712.91693,433.1164736 L714.9503,432.6469284 L716.9836700000001,432.6469284 L719.01704,432.6469284 L721.05041,432.6469284 L723.0837799999999,432.6469284 L725.11715,433.621804 L727.15052,433.621804 L729.18389,433.621804 L731.21726,433.621804 L733.25063,433.621804 L735.284,433.621804 L737.31737,433.621804 L739.3507400000001,433.621804 L741.38411,433.621804 L743.41748,434.59559520000005 L745.45085,433.1435836 L747.48422,433.1435836 "/>
+                        </g>
+                    </g>
+                </g>
+            </g>
+            <g fill="none" stroke="black" stroke-width="1" fill-rule="evenodd" stroke-linecap="square" stroke-linejoin="bevel" id="QGraphicsRectItem_1">
+                <g fill="none" stroke="none" transform="matrix(1,0,0,1,59.0906,31)" font-family=".AppleSystemUIFont" font-size="13" font-weight="400" font-style="normal">
+                    <rect vector-effect="non-scaling-stroke" x="0" y="0" width="713.909" height="442.8"/>
+                </g>
+            </g>
+        </g>
+    </g>
+    <g fill="none" stroke="black" stroke-width="1" fill-rule="evenodd" stroke-linecap="square" stroke-linejoin="bevel" id="LabelItem_1">
+        <g fill="none" stroke="black" stroke-width="1" fill-rule="evenodd" stroke-linecap="square" stroke-linejoin="bevel" id="QGraphicsTextItem_1">
+            
+
+
+            
+
+
+            
+
+
+            <g fill="none" stroke="#969696" stroke-opacity="1" stroke-width="1" stroke-linecap="square" stroke-linejoin="bevel" transform="matrix(1,0,0,1,404.608,5.5)" font-family=".AppleSystemUIFont" font-size="13" font-weight="400" font-style="normal">
+                <text fill="#969696" fill-opacity="1" stroke="none" xml:space="preserve" x="4" y="14.625" font-family=".AppleSystemUIFont" font-size="11" font-weight="400" font-style="normal">AB</text>
+            </g>
+            
+
+
+            
+
+        </g>
+    </g>
+    <g fill="none" stroke="black" stroke-width="1" fill-rule="evenodd" stroke-linecap="square" stroke-linejoin="bevel" id="AxisItem_1">
+        <g fill="none" stroke="#969696" stroke-opacity="1" stroke-width="1" stroke-linecap="square" stroke-linejoin="bevel" font-family=".AppleSystemUIFont" font-size="13" font-weight="400" font-style="normal">
+            <polyline fill="none" vector-effect="non-scaling-stroke" points="59.0906,473.8 772.9996,473.8"/>
+            <polyline fill="none" vector-effect="non-scaling-stroke" points="84.60560000000001,473.8 84.60560000000001,468.8"/>
+        </g>
+        <g fill="none" stroke="#969696" stroke-opacity="0.498039" stroke-width="1" stroke-linecap="square" stroke-linejoin="bevel" font-family=".AppleSystemUIFont" font-size="13" font-weight="400" font-style="normal">
+            <polyline fill="none" vector-effect="non-scaling-stroke" points="491.2796,473.8 491.2796,470.46667"/>
+        </g>
+        <g fill="none" stroke="#969696" stroke-opacity="0.333333" stroke-width="1" stroke-linecap="square" stroke-linejoin="bevel" font-family=".AppleSystemUIFont" font-size="13" font-weight="400" font-style="normal">
+            <polyline fill="none" vector-effect="non-scaling-stroke" points="165.9406,473.8 165.9406,471.3"/>
+            <polyline fill="none" vector-effect="non-scaling-stroke" points="247.2756,473.8 247.2756,471.3"/>
+            <polyline fill="none" vector-effect="non-scaling-stroke" points="328.6106,473.8 328.6106,471.3"/>
+            <polyline fill="none" vector-effect="non-scaling-stroke" points="409.9456,473.8 409.9456,471.3"/>
+            <polyline fill="none" vector-effect="non-scaling-stroke" points="572.6146,473.8 572.6146,471.3"/>
+            <polyline fill="none" vector-effect="non-scaling-stroke" points="653.9496,473.8 653.9496,471.3"/>
+            <polyline fill="none" vector-effect="non-scaling-stroke" points="735.2846,473.8 735.2846,471.3"/>
+        </g>
+        <g fill="none" stroke="#969696" stroke-opacity="1" stroke-width="1" stroke-linecap="square" stroke-linejoin="bevel" transform="matrix(1,0,0,1,59.0906,473.8)" font-family=".AppleSystemUIFont" font-size="13" font-weight="400" font-style="normal">
+            <text fill="#969696" fill-opacity="1" stroke="none" xml:space="preserve" x="21.4844" y="14.125" font-family=".AppleSystemUIFont" font-size="13" font-weight="400" font-style="normal">0</text>
+            <text fill="#969696" fill-opacity="1" stroke="none" xml:space="preserve" x="425.234" y="14.125" font-family=".AppleSystemUIFont" font-size="13" font-weight="400" font-style="normal">10</text>
+            <text fill="#969696" fill-opacity="1" stroke="none" xml:space="preserve" x="103" y="14.125" font-family=".AppleSystemUIFont" font-size="13" font-weight="400" font-style="normal">2</text>
+            <text fill="#969696" fill-opacity="1" stroke="none" xml:space="preserve" x="184.078" y="14.125" font-family=".AppleSystemUIFont" font-size="13" font-weight="400" font-style="normal">4</text>
+            <text fill="#969696" fill-opacity="1" stroke="none" xml:space="preserve" x="265.453" y="14.125" font-family=".AppleSystemUIFont" font-size="13" font-weight="400" font-style="normal">6</text>
+            <text fill="#969696" fill-opacity="1" stroke="none" xml:space="preserve" x="346.781" y="14.125" font-family=".AppleSystemUIFont" font-size="13" font-weight="400" font-style="normal">8</text>
+            <text fill="#969696" fill-opacity="1" stroke="none" xml:space="preserve" x="506.734" y="14.125" font-family=".AppleSystemUIFont" font-size="13" font-weight="400" font-style="normal">12</text>
+            <text fill="#969696" fill-opacity="1" stroke="none" xml:space="preserve" x="587.813" y="14.125" font-family=".AppleSystemUIFont" font-size="13" font-weight="400" font-style="normal">14</text>
+            <text fill="#969696" fill-opacity="1" stroke="none" xml:space="preserve" x="669.188" y="14.125" font-family=".AppleSystemUIFont" font-size="13" font-weight="400" font-style="normal">16</text>
+        </g>
+        <g fill="none" stroke="black" stroke-width="1" fill-rule="evenodd" stroke-linecap="square" stroke-linejoin="bevel" id="QGraphicsTextItem_2">
+            
+
+
+            
+
+
+            
+
+
+            <g fill="none" stroke="#969696" stroke-opacity="1" stroke-width="1" stroke-linecap="square" stroke-linejoin="bevel" transform="matrix(1,0,0,1,387.091,493.8)" font-family=".AppleSystemUIFont" font-size="13" font-weight="400" font-style="normal">
+                <text fill="#969696" fill-opacity="1" stroke="none" xml:space="preserve" x="4" y="16.5625" font-family=".AppleSystemUIFont" font-size="13" font-weight="400" font-style="normal">Time (s)</text>
+            </g>
+            
+
+
+            
+
+        </g>
+    </g>
+    <g fill="none" stroke="black" stroke-width="1" fill-rule="evenodd" stroke-linecap="square" stroke-linejoin="bevel" id="AxisItem_2">
+        <g fill="none" stroke="#969696" stroke-opacity="1" stroke-width="1" stroke-linecap="square" stroke-linejoin="bevel" font-family=".AppleSystemUIFont" font-size="13" font-weight="400" font-style="normal">
+            <polyline fill="none" vector-effect="non-scaling-stroke" points="59.0906,31.0 59.0906,473.8"/>
+            <polyline fill="none" vector-effect="non-scaling-stroke" points="59.0906,367.572 64.0906,367.572"/>
+            <polyline fill="none" vector-effect="non-scaling-stroke" points="59.0906,150.692 64.0906,150.692"/>
+        </g>
+        <g fill="none" stroke="#969696" stroke-opacity="0.498039" stroke-width="1" stroke-linecap="square" stroke-linejoin="bevel" font-family=".AppleSystemUIFont" font-size="13" font-weight="400" font-style="normal">
+            <polyline fill="none" vector-effect="non-scaling-stroke" points="59.0906,259.132 62.424,259.132"/>
+            <polyline fill="none" vector-effect="non-scaling-stroke" points="59.0906,42.2522 62.424,42.2522"/>
+        </g>
+        <g fill="none" stroke="#969696" stroke-opacity="1" stroke-width="1" stroke-linecap="square" stroke-linejoin="bevel" transform="matrix(1,0,0,1,1,31)" font-family=".AppleSystemUIFont" font-size="13" font-weight="400" font-style="normal">
+            <text fill="#969696" fill-opacity="1" stroke="none" xml:space="preserve" x="29.3281" y="341.047" font-family=".AppleSystemUIFont" font-size="13" font-weight="400" font-style="normal">200</text>
+            <text fill="#969696" fill-opacity="1" stroke="none" xml:space="preserve" x="28.8125" y="124.156" font-family=".AppleSystemUIFont" font-size="13" font-weight="400" font-style="normal">400</text>
+            <text fill="#969696" fill-opacity="1" stroke="none" xml:space="preserve" x="29.0313" y="232.594" font-family=".AppleSystemUIFont" font-size="13" font-weight="400" font-style="normal">300</text>
+            <text fill="#969696" fill-opacity="1" stroke="none" xml:space="preserve" x="29.1406" y="15.7188" font-family=".AppleSystemUIFont" font-size="13" font-weight="400" font-style="normal">500</text>
+        </g>
+        <g fill="none" stroke="black" stroke-width="1" fill-rule="evenodd" stroke-linecap="square" stroke-linejoin="bevel" id="QGraphicsTextItem_3">
+            
+
+
+            
+
+
+            
+
+
+            <g fill="none" stroke="#969696" stroke-opacity="1" stroke-width="1" stroke-linecap="square" stroke-linejoin="bevel" transform="matrix(0,-1,1,0,-4,296)" font-family=".AppleSystemUIFont" font-size="13" font-weight="400" font-style="normal">
+                <text fill="#969696" fill-opacity="1" stroke="none" xml:space="preserve" x="4" y="16.5625" font-family=".AppleSystemUIFont" font-size="13" font-weight="400" font-style="normal">Distance (px)</text>
+            </g>
+            
+
+
+            
+
+        </g>
+    </g>
+</g>
+
+</svg>
