@@ -1,63 +1,78 @@
-# Tixier-Mita laboratory - Anytrack
+# Tixier-Mita Laboratory – AnyTrack
 
 ## Authors (of software and summary)
 - Thomas Wanchaï MENIER (2023)
 - Maxime SIMORRE (2025)
 
 ## Developed thanks to
-- Agnès TIXIER-MITA, Associate professor at the IIS
-- Gilgueng Hwang, researcher at the IIS
-- Hiroshi TOSHIYOSHI, head researcher of the Toshiyoshi laboratory, IIS
-- Alex DUFOUR, French colleague, 3rd year engineering student at ENSEIRB-MATMECA, Bordeaux
-
-- Gabriel Faure, French colleague, engineering student at the University of Tokyo
-- Universitary Institute of Technology (IUT) of Bordeaux-Gradignan, France
-- Institute of Industrial Science (IIS), The University of Tokyo, Tokyo
+- Agnès TIXIER-MITA, Associate Professor at the Institute of Industrial Science (IIS)
+- Gilgueng Hwang, Researcher at the IIS
+- Hiroshi TOSHIYOSHI, Head of the Toshiyoshi Laboratory, IIS
+- Alex DUFOUR, ENSEIRB-MATMECA, Bordeaux
+- Gabriel FAURE, Engineering student at the University of Tokyo
+- Universitary Institute of Technology (IUT) of Bordeaux-Gradignan
+- Institute of Industrial Science, The University of Tokyo
 
 ## Guides
 - [User Manual](./docs/USER_MANUAL.md)
 - [Installation](./INSTALL.md)
 - [Development Guide](./docs/DEV_MANUAL.md)
 
+---
+
 ## Context
+
 ### About the project
 
-Upon request of Agnès TIXIER-MITA, associate professor at the Institute of Industrial Science, this software
-was created to allow for tracking operations on cardyomyocyte cells. The software allows to perform distance analysis
-between two tracked points, on videos and/or in real-time.
+AnyTrack is a Python-based video tracking tool designed to help researchers analyze the contraction of cardiomyocyte cells using video microscopy. The software allows users to define and track regions of interest (trackers) and measure the distance between them in real time or from recorded videos.
 
-It has been designed with the idea of flexibility, adding new trackers to the software does not require to have a deep knowledge 
-of the whole architecture, but only of a few files.
+Originally developed by Thomas MENIER in 2023, the tool was improved in 2025 to enhance usability, fix critical bugs, and provide researchers with greater control over data collection and visualization. The tool is modular and extensible, allowing additional tracker types to be added with minimal effort.
 
-The motivation for the project is because I had to perform a 2-month internship in the Tixier-Mita laboratory, this problem was given
-to me and this was the solution that has been developed.
+AnyTrack was developed as part of an undergraduate internship at the Tixier-Mita Laboratory, in response to the need for lightweight and customizable alternatives to more complex tools like ImageJ, which may not be practical for real-time or embedded use cases.
 
-### Features
-- Tracking with currently 2 types of tracker implemented 
-    - Normalize Cross Correlation (template matching)
-    - KCF Tracker (implementation of OpenCV)
-- Live tracking from a video feed
-- Client/Server architecture available for remote or linked integration with a microscope
-(more details ![below](#client-server-protocol))
+---
 
-### Why not use ImageJ or integrate other open-source software ?
-I was a 2nd year Computer Science student at the time, and I had only heard about those software. The problem is that I had the choice of
-either trying to delve in an open-source software and trying to extend it, or develop something from scratch.
+### Main Features
 
-Given the limited time frame I had, and knowing that I had never performed the former, I went with the more second approach
-to ensure a result could be produced at the end. This way, I was sure my university would consider my work as valid, I wasn't very
-sure if integration would get me a good enough grade as well.
+- Track distance between two dynamic regions (trackers) in live or recorded video.
+- Flexible architecture allowing new tracker types to be added easily.
+- Multiple tracker types:
+  - Template matching via Normalized Cross-Correlation
+  - KCF (Kernelized Correlation Filter) tracker (OpenCV)
+- Graph plotting system with pause/resume, CSV export, and snapshot saving.
+- Video playback controls: play, pause, seek, contrast adjustment.
+- Compatible with real-time feeds or prerecorded video.
+- Optional Client/Server communication mode for Raspberry Pi integration.
 
-## <p id=client-server-protocol>Client Server protocol</p>
-The main idea of Agnès-sensei, my mentor, was to retrieve the live video feed of a microscope to perform real-time analyses
-on an external software. Learning that it was not possible to retrieve the feed of the existing microscopes at the laboratory,
-the task has been changed to allow the software to communicate with a RaspberryPI containing a camera. This system would imitate
-a microscope, and because the RaspberryPI is open-source, it was possible to realize the communication between my software and
-the custom microscope.
+---
 
-To perform this, a Client/Server architecture has been developed that also implements a custom 
-Application Layer communication protocol. Consider that the RaspberryPI acts as a server, which sends video
-frames to the live tracking software, namely the client. More information about the communication protocol definition ![here](src/comm_protocol/comm_protocol_definition.md)
+### Improvements in 2025
 
-Any developer can implement the protocol to send frames over the TCP protocol. A guide to implement this
-will be written in the future.
+Significant updates were made to enhance both the robustness and flexibility of the software:
+- Manual tracker resizing at creation and during usage.
+- Rewritten plotting system with start/pause/resume/save controls.
+- Improved synchronization between plotting and video frames.
+- Better error handling to prevent crashes with long videos.
+- More reliable export of graphs and CSV data.
+- Clearer GUI for plotting and playback.
+- New detection of video end to avoid infinite looping.
+
+These changes make AnyTrack much more usable in a research setting, while keeping it accessible for biology-focused users.
+
+---
+
+### Why not use ImageJ?
+
+AnyTrack was developed from scratch due to time constraints and the need for a lightweight, targeted solution. The original author (MENIER) preferred this approach to ensure a working prototype could be delivered. Open-source alternatives like ImageJ were considered but not suitable for real-time integration or direct embedding with custom hardware like Raspberry Pi-based microscopes.
+
+---
+
+## <p id="client-server-protocol">Client–Server Protocol</p>
+
+Originally, the tool was intended to interface with a real microscope to retrieve a live feed. However, due to hardware limitations, this was replaced with a simulated setup using a Raspberry Pi and camera module. The software can now act as a TCP client, receiving image data in real time from a server-like device.
+
+A lightweight custom protocol defines how frames and metadata are exchanged. Developers can build their own compatible servers (e.g., on Raspberry Pi) to stream data into AnyTrack over a network connection.
+
+See [protocol definition](src/comm_protocol/comm_protocol_definition.md) for details.
+
+A full implementation guide for this protocol may be provided in future versions.
