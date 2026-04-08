@@ -20,7 +20,7 @@ please click [here](custom_integrations/tixier_mita_lab/README.md)
 ### 1. Download the source code
 
 Head to the following link:  
-https://github.com/Wanchai290/tmita-optical-cardyomyocyte-analysis
+https://github.com/ERROMIS/Anytrack-V2
 
 Click on the **Releases** section on the right-hand side and download the **latest** release.
 
@@ -32,18 +32,7 @@ Choose the `.zip` file under **Source code**, then extract it wherever you want.
 
 Open a terminal in the project folder and run:
 
-**On Unix/macOS:**
-
-```bash
-chmod u+x install_requirements.sh run.sh
-./install_requirements.sh
-```
-
-**On Windows:**
-
-Double-click `install_requirements.bat`.
-
-This runs `uv sync`, which installs all dependencies into an isolated virtual environment automatically.
+uv sync
 
 ---
 
