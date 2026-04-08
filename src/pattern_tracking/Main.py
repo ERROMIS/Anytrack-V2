@@ -18,26 +18,24 @@ class Main:
 
     def __init__(self):
         self._app = QApplication(sys.argv)
-        """Qt GUI application object"""
         self._global_halt = Event()
-        """Event used to halt operations on separate threads. Should only be modified by the Qt aboutToQuit() signal"""
         self._tracker_manager = TrackerManager()
-        """Contains all current trackers used"""
         self._live_feed_wrapper: LiveFeedWrapper = LiveFeedWrapper(DummyVideoFeed(self._global_halt))
-        """Continuously reads the current video stream. Dummy feed on startup, replaced by a proper one by the user"""
         self._main_window = AppMainWindow(self._tracker_manager, self._live_feed_wrapper)
-        """QT Main window object"""
         self._app.aboutToQuit.connect(self._stop_children_operations)
-        """Allows us to do properly stop children threads before the Qt interface exits"""
+
         self._background_computation_worker = BackgroundComputation(
             self._tracker_manager,
             self._live_feed_wrapper,
             self._main_window.get_frame_display_widget(),
-            self._main_window.get_plot_container_widget(),
             self._global_halt,
             self._main_window
         )
-        """Connects the widgets and the children threads together"""
+
+        # Connect cross-thread signal: plot update runs on main thread via Qt event queue
+        self._background_computation_worker.plot_update_requested.connect(
+            self._main_window.get_plot_container_widget().update_plots
+        )
 
     def run(self):
         self._live_feed_wrapper.start()
@@ -49,6 +47,10 @@ class Main:
         self._global_halt.set()
 
 
-if __name__ == '__main__':
+def main():
     worker = Main()
     worker.run()
+
+
+if __name__ == '__main__':
+    main()

@@ -1,4 +1,3 @@
-from threading import Lock
 from typing import Any
 from pyqtgraph import PlotWidget
 import numpy as np
@@ -39,7 +38,6 @@ class DistancePlotWidget(PlotWidget):
         self._start_time: int | None = None
         self._stop_plotting = False
         self._is_plotting = False
-        self._mutex = Lock()
 
     def get_feed_fps(self) -> int:
         """Return the feed's frames per second."""

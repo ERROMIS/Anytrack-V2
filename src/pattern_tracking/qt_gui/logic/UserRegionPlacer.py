@@ -49,10 +49,6 @@ class UserRegionPlacer:
             int(mx - poi_w / 2), poi_w,
             int(my - poi_h / 2), poi_h
         )
-        print(f"POI from user: width={poi_w}, height={poi_h}")
-        print(f"→ ROI xwyh: {computed_poi.get_xwyh()} (x, w, y, h)")
-        print(f"→ ROI xywh: {computed_poi.get_xywh()} (x, y, w, h)")
-
         # Only consider the POI useful if
         #  - the detection region is undefined (thus, we find the POI in the whole frame
         #  - the computed POI is in the detection region

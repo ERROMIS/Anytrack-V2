@@ -292,6 +292,8 @@ pyrightconfig.json
 .idea/
 
 
+requirements.txt
+
 *.csv
 *.png
 *.svg

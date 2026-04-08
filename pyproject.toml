@@ -1,0 +1,20 @@
+[project]
+name = "anytrack"
+version = "0.1.0"
+description = "Optical distance tracking between two regions of interest in a video feed"
+requires-python = ">=3.11"
+dependencies = [
+    "fastcrc",
+    "numpy",
+    "opencv-python",
+    "pillow",
+    "pyqtgraph",
+    "pyside6",
+    "pyzmq",
+]
+
+[project.scripts]
+anytrack = "src.pattern_tracking.Main:main"
+
+[tool.uv]
+package = false

@@ -59,7 +59,7 @@ class RegionOfInterest:
         if len(xwyh) > 4:
             raise ValueError("Cannot create ROI, more than 4 items in given parameter")
 
-        if type(xwyh) == tuple:
+        if isinstance(xwyh, tuple):
             xwyh = np.array(xwyh)
 
         # specify dummy values to initialize variables

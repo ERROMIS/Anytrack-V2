@@ -18,4 +18,5 @@ class SelectFramesFromZMQSocketAction(QAction):
         if dlg.exec():
             self._live_feed.change_feed(dlg.get_connection_result())
             if self._main_window:
+                self._main_window.reset_for_new_feed()
                 self._main_window.hide_video_controls_if_needed()

@@ -2,55 +2,46 @@ from PySide6.QtGui import QAction
 from PySide6.QtWidgets import QWidget
 
 from src.pattern_tracking.logic.tracker.TrackerManager import TrackerManager
+from src.pattern_tracking.logic.video.LiveFeedWrapper import LiveFeedWrapper
 from src.pattern_tracking.qt_gui.dock_widgets.LivePlotterDockWidget import LivePlotterDockWidget
 from src.pattern_tracking.qt_gui.generic.GenericAssets import GenericAssets
 from src.pattern_tracking.qt_gui.top_menu_bar.plot.NewPlotQDialog import NewPlotQDialog
 
 
 class CreatePlotAction(QAction):
-    """
-    Menu bar action that opens a dialog to create a new distance plot
-    between two active trackers in the scene.
-    """
+    """Menu action that opens the dialog to create a new distance plot."""
 
     def __init__(self,
                  tracker_manager: TrackerManager,
                  plot_widget: LivePlotterDockWidget,
+                 live_feed: LiveFeedWrapper,
                  parent: QWidget = None):
-        """
-        Initializes the action and connects it to its trigger method.
-
-        Args:
-            tracker_manager (TrackerManager): The object managing active trackers.
-            plot_widget (LivePlotterDockWidget): The widget where the new plot will be displayed.
-            parent (QWidget, optional): Optional parent widget for this action.
-        """
         super().__init__(parent=parent, text="Create plot")
         self._PLOTS_CONTAINER = plot_widget
         self._TRACKER_MANAGER = tracker_manager
+        self._live_feed = live_feed
         self.triggered.connect(self._new_plot_dialog)
 
     def _new_plot_dialog(self):
-        """
-        Opens the dialog to create a new distance plot.
-        Ensures at least 2 trackers are active before proceeding.
-        """
         available_trackers = list(self._TRACKER_MANAGER.alive_trackers().values())
 
         if len(available_trackers) < 2:
             GenericAssets.popup_message(
-                title="Error: Not enough trackers",
-                message=(
-                    "You need at least 2 different trackers to start plotting distances.\n"
-                    "Please create a new tracker using the top-left tabs."
-                ),
+                title="Not enough trackers",
+                message="You need at least 2 trackers to plot distances.",
                 is_error=True
             )
             return
 
-        # Open the dialog for selecting trackers and plot options
-        dialog = NewPlotQDialog(available_trackers)
+        # Auto-detect FPS from the video reader if available
+        detected_fps: int | None = None
+        reader = self._live_feed.get_video_reader()
+        if reader:
+            fps = reader.get_fps()
+            if fps > 0:
+                detected_fps = round(fps)
 
+        dialog = NewPlotQDialog(available_trackers, detected_fps=detected_fps)
         if dialog.exec():
             self._PLOTS_CONTAINER.new_plot(
                 dialog.get_resulting_dist_observer(),

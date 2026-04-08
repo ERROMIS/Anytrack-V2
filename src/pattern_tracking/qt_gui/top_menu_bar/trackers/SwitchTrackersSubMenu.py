@@ -73,13 +73,11 @@ class SwitchTrackersSubMenu(QMenu):
         self.removeAction(to_remove)
 
     def on_tracker_added_callback(self, tracker: AbstractTracker):
-        """
-        This method should be called everytime a new tracker has been added.
-        It will update the GUI to add the new tracker to the list of active
-        trackers, so the user can switch to any of the active ones
-
-        dev note: Signals could've been used, but it would have led to the
-        same implementation on the high level
-        :param tracker: The tracker that has been recently added
-        """
+        """Called when a new tracker is created — adds it to the submenu."""
         self._add_tracker_item(tracker)
+
+    def clear(self):
+        """Remove all tracker items from the submenu."""
+        for action in self._actions.values():
+            self.removeAction(action)
+        self._actions.clear()

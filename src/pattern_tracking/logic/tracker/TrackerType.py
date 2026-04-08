@@ -1,19 +1,17 @@
 from collections import namedtuple
 from enum import Enum
 
-from src.pattern_tracking.logic.tracker.FixedPointTracker import FixedPointTracker
-#from src.pattern_tracking.logic.tracker.KCFTracker import KCFTracker
-from src.pattern_tracking.logic.tracker.TemplateTracker import TemplateTracker
+from src.pattern_tracking.logic.tracker.PatternTracker import PatternTracker
+from src.pattern_tracking.logic.tracker.ReferenceTracker import ReferenceTracker
 
 TrackerTypeData = namedtuple("TrackerTypeData", "name constructor")
 
 
 class TrackerType(Enum):
     """
-    Describes the different types of tracker that are available in the app
-    Their data is accessible by name, and are defined by the named tuple TrackerTypeData,
-    located in the same file as this class.
+    Available tracker types.
+    - PatternTracker: tracks a moving region using template matching.
+    - ReferenceTracker: holds a fixed reference point (world frame).
     """
-    TEMPLATE_TRACKER = TrackerTypeData("Template tracker", TemplateTracker)
-    #KCF_TRACKER = TrackerTypeData("KCF Tracker", KCFTracker)
-    FIXED_POINT_TRACKER = TrackerTypeData("Fixed Point tracker", FixedPointTracker)
+    PATTERN_TRACKER = TrackerTypeData("Pattern tracker", PatternTracker)
+    REFERENCE_TRACKER = TrackerTypeData("Reference tracker", ReferenceTracker)

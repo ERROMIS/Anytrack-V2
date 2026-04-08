@@ -2,7 +2,6 @@ import uuid
 from threading import Lock
 
 import numpy as np
-from PySide6.QtGui import QAction
 
 from src.pattern_tracking.logic.tracker.AbstractTracker import AbstractTracker
 from src.pattern_tracking.logic.tracker.TrackerType import TrackerType
@@ -26,8 +25,6 @@ class TrackerManager:
         Any modification operation MUST get the lock before modifying the collection of this manager
         Otherwise, the program might run into a RuntimeError because the collection would change while it's being read
         """
-
-        self._qt_actions: dict[str, QAction] = {}
 
     def get_tracker(self, tracker_id: uuid.UUID) -> AbstractTracker | None:
         """
@@ -117,6 +114,18 @@ class TrackerManager:
 
     def clear_active_tracker_detection_region(self):
         self._active_tracker.set_detection_region(RegionOfInterest.new_empty())
+
+    def clear(self):
+        """Remove all trackers and reset the active tracker selection."""
+        with self._collection_mutex:
+            self._collection.clear()
+            self._active_tracker = None
+
+    def reset_all_positions(self):
+        """Reset tracker POI positions without removing trackers from the collection."""
+        with self._collection_mutex:
+            for tracker in self._collection.values():
+                tracker.reset_poi()
 
     def alive_trackers(self) -> dict[uuid.UUID, AbstractTracker]:
         """Returns the UUIDs and names of all trackers currently in this manager"""

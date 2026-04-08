@@ -39,3 +39,8 @@ class TrackersMenu(QMenu):
         self.addAction(self._CREATE_TRACKER_ACTION)
         self.addAction(self._CLEAR_ACTIVE_TRACKER_DETREG)
         self.addMenu(self._SWITCH_TRACKERS_SUBMENU)
+
+    def reset(self):
+        """Clear all trackers from both the data layer and the submenu UI."""
+        self._TRACKER_MANAGER.clear()
+        self._SWITCH_TRACKERS_SUBMENU.clear()

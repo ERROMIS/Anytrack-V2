@@ -106,10 +106,7 @@ class FrameDisplayWidget(QLabel):
             return
 
         if event.button() == PySide6.QtCore.Qt.MouseButton.LeftButton:
-            self._USER_REGION_PLACER.create_new_poi(
-                event.x(),
-                event.y()
-            )
+            self._USER_REGION_PLACER.create_new_poi(event.x(), event.y())
 
         elif event.button() == PySide6.QtCore.Qt.MouseButton.RightButton:
             self._USER_REGION_PLACER.create_new_detection_region(event.x(), event.y())

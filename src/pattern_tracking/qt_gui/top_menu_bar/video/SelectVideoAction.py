@@ -25,7 +25,7 @@ class SelectVideoAction(QAction):
                             global_halt_event=self._live_feed.get_global_halt_event(),
                             is_video=True, loop_video=True)
             )
-            # Affiche le widget de contrôle vidéo
             if self._main_window:
+                self._main_window.reset_for_new_feed()
                 self._main_window.get_video_control_widget().setVisible(True)
                 self._main_window.update_slider_range_if_video()

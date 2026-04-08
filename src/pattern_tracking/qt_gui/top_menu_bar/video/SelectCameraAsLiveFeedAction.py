@@ -24,4 +24,5 @@ class SelectCameraAsLiveFeedAction(QAction):
             ))
 
             if self._main_window:
+                self._main_window.reset_for_new_feed()
                 self._main_window.hide_video_controls_if_needed()

@@ -43,9 +43,9 @@ class CreateTrackerAction(QAction):
         dlg = NewTrackerQDialog(self._tracker_manager, parent_widget=self._TOP_LEVEL_PARENT)
 
         if dlg.exec():
-            if set_new_as_default:
-                self._tracker_manager.set_active_tracker(dlg.get_created_tracker().get_id())
-            self._on_creation_complete_callback(dlg.get_created_tracker())
+            new_tracker = dlg.get_created_tracker()
+            self._tracker_manager.set_active_tracker(new_tracker.get_id())
+            self._on_creation_complete_callback(new_tracker)
 
 
 if __name__ == "__main__":

@@ -8,9 +8,10 @@ please click [here](custom_integrations/tixier_mita_lab/README.md)
 
 ## Pre-requisites
 
-- Python 3 (version ≥ 3.10)
-- pip (Python package manager)
+- [uv](https://docs.astral.sh/uv/getting-started/installation/) (Python package manager)
 - git (optional, for downloading the project from GitHub)
+
+`uv` will automatically download and manage the correct Python version — no need to install Python manually.
 
 ---
 
@@ -21,66 +22,15 @@ please click [here](custom_integrations/tixier_mita_lab/README.md)
 Head to the following link:  
 https://github.com/Wanchai290/tmita-optical-cardyomyocyte-analysis
 
-Click on the **Releases** section on the right-hand side.
+Click on the **Releases** section on the right-hand side and download the **latest** release.
 
-![GitHub project page](docs/docs_images/images/github_project_page.png)
-
-Click to view available versions:
-
-![GitHub project page, Releases section](docs/docs_images/images/github_project_page_releases_focus.png)
-
-Download the **latest** release.
-
-![GitHub project releases page](docs/docs_images/images/github_releases_page.png)
-
-Choose the `.zip` file under **Source code**:
-
-![GitHub project releases page, Source code download button](docs/docs_images/images/github_releases_source_code_button_focus.png)
-
-Once downloaded, extract the archive wherever you want.
+Choose the `.zip` file under **Source code**, then extract it wherever you want.
 
 ---
 
-### 2. (Recommended) Create and activate a virtual environment
+### 2. Install dependencies
 
-A virtual environment helps keep your project dependencies isolated from the rest of your system.
-
-In the project folder, open a terminal and run:
-
-```bash
-# Create the virtual environment (you can change .venv to any folder name)
-python3 -m venv .venv
-```
-
-To activate it:
-
-**On Unix/macOS:**
-
-```bash
-source .venv/bin/activate
-```
-
-**On Windows (cmd):**
-
-```cmd
-.venv\Scripts\activate
-```
-
-Once activated, your terminal should show `(.venv)` at the beginning of the prompt. This means you're inside the environment.
-
-To **deactivate** the virtual environment at any time:
-
-```bash
-deactivate
-```
-
-To **reactivate it later**, navigate to the project folder again and run the same command depending on your OS.
-
----
-
-### 3. Install dependencies
-
-Make sure you're in the virtual environment before doing this step.
+Open a terminal in the project folder and run:
 
 **On Unix/macOS:**
 
@@ -91,11 +41,13 @@ chmod u+x install_requirements.sh run.sh
 
 **On Windows:**
 
-Just double-click `install_requirements.bat`.
+Double-click `install_requirements.bat`.
+
+This runs `uv sync`, which installs all dependencies into an isolated virtual environment automatically.
 
 ---
 
-### 4. Run the program
+### 3. Run the program
 
 **On Unix/macOS:**
 
@@ -112,5 +64,4 @@ Double-click `run.bat`.
 ## Notes
 
 - The software was primarily tested on **Ubuntu 22.04** and **Windows 11**.
-- No compatibility issues were reported, but Linux is preferred for development/debugging.
-- If you encounter any problems with OpenCV or PySide6 installations, check your Python version and system architecture.
+- If you encounter any problems, make sure `uv` is installed and accessible from your terminal.

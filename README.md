@@ -37,8 +37,8 @@ AnyTrack was developed as part of an undergraduate internship at the Tixier-Mita
 - Track distance between two dynamic regions (trackers) in live or recorded video.
 - Flexible architecture allowing new tracker types to be added easily.
 - Multiple tracker types:
-  - Template matching via Normalized Cross-Correlation
-  - KCF (Kernelized Correlation Filter) tracker (OpenCV)
+  - Pattern Tracker — template matching via Normalized Cross-Correlation
+  - Reference Tracker — fixed reference point
 - Graph plotting system with pause/resume, CSV export, and snapshot saving.
 - Video playback controls: play, pause, seek, contrast adjustment.
 - Compatible with real-time feeds or prerecorded video.

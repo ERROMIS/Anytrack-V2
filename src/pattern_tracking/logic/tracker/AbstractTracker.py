@@ -106,6 +106,13 @@ class AbstractTracker(ABC):
         """
         self._template_poi = poi
 
+    def reset_poi(self) -> None:
+        """Reset the placed POI and detection region, keeping this tracker in the manager."""
+        self._template_poi = RegionOfInterest.new_empty()
+        self._found_poi = RegionOfInterest.new_empty()
+        self._detection_region = RegionOfInterest.new_empty()
+        self._initialized = False
+
     def get_found_poi_center(self) -> np.ndarray | None:
         """
         Returns the center point of the found POI in the current frame.
